@@ -22,7 +22,7 @@ nohup python3 daskClientAssetCorr.py &
 //Test flask endpoint using curl from driver node:
 //d is an array of date_id ranges
 //s is input symbol_id
-time curl -o a.out -d '{"d":[[10,100],[463,1057]],"s":16}'  -H 'Content-Type: application/json' -X POST http://159.69.208.232:5000/api/corr
+time curl -o a.out -d '{"d":[[10,100],[463,1057]],"s":16}'  -H 'Content-Type: application/json' -X POST http://127.0.0.1:5000/api/corr
 
 
 //To create the numpy arrays from flat files use the file createNumpys.py:
